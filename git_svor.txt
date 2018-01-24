@@ -1,1 +1,11 @@
 "Git spurningar og sv" og svör"
+1. Hvað gera eftirfarandi Linux skipanir?
+	cd tekur nafn á möppu sem rök og skiptir yfir í möppuna.
+	
+	cd ~ fer út your móppuni sem þú ert í
+	
+	ls listar allar skrár og möppur í vinnuskránni
+	
+	pwd prentar fullan aðgangsorð núverandi vinnubókar.
+	
+	mkdir tekur nafn í möppu sem rök, og býr síðan til nýjan möppu í núverandi vinnuskrá. Hér notuðum við mkdir til að búa til nýjan möppu sem heitir fjölmiðlar /.
