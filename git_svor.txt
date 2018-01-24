@@ -1,5 +1,6 @@
 "Git spurningar og sv" og svör"
-1. Hvað gera eftirfarandi Linux skipanir?
+1.spurning 
+Hvað gera eftirfarandi Linux skipanir?
 	cd tekur nafn á möppu sem rök og skiptir yfir í möppuna.
 	
 	cd ~ fer út your móppuni sem þú ert í
@@ -9,3 +10,18 @@
 	pwd prentar fullan aðgangsorð núverandi vinnubókar.
 	
 	mkdir tekur nafn í möppu sem rök, og býr síðan til nýjan möppu í núverandi vinnuskrá. Hér notuðum við mkdir til að búa til nýjan möppu sem heitir fjölmiðlar /.
+
+	
+	2. Hvað gera eftirfarandi git skipanir og hvers vegna eru þær gagnlegar?
+	git clone gerir afrit af geymslunni
+	
+	git log CommitId er leiðandi stafi breytingafjöldi, allt að 10, en verður að vera einstakt. Fáðu kennitölu með:
+	
+	git status Skráðu skrárnar sem þú hefur breytt og þeim sem þú þarft enn að bæta við eða fremja:
+	
+	git diff Skoðaðu allar samrunaárekstra:
+Skoða átökin gegn grunnskránni:
+Forskoða breytingar áður en sameinast:
+	
+	git checkout Býr til nýja útibú og skiptir yfir í það
+
