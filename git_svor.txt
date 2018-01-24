@@ -25,3 +25,27 @@ Forskoða breytingar áður en sameinast:
 	
 	git checkout Býr til nýja útibú og skiptir yfir í það
 
+	3. Hver er munurinn á eftirfarandi git skipunum:
+	a) git diff Skoðaðr allar samrunaárekstra
+S                           
+	b) git diff --staged Skoða átökin gegn grunnskránni
+	c) git diff commit1 commit2 Forskoðar breytingar áður en sameinast  
+
+4. 	Hvað er útgáfustýring (e.version control)? oftast rekin sem sjálfstæð forrit, en endurskoðunarstjórnun er einnig innbyggð í ýmiss konar hugbúnaði eins og ritvinnsluforritum og töflureiknum, samstarfsvettvangi vefrita  og í ýmsum kerfum fyrir innihaldsstjórnun
+
+
+5.	Hverjir eru helstu kostir við að nota GIT?
+Eitt af stærstu kostum Git er greiningargeta hennar. Ólíkt miðlægum útgáfu eftirlitskerfum eru Git útibú ódýr og auðvelt að sameina. Þetta auðveldar vinnustofu greiningartækisins vinsæl hjá mörgum Git notendum.
+
+6.	Hversu oft telur þú að eigi að gera commit í verkefni, rökstuddu?
+Til þess að sækja skjölinn þannig að í meðalagi sirka 6-8 sinnum í 1 verkefni.
+
+7.	Hvað er "Working directory"?" "Staging area"?" og "Repository" í GIT?git grep "foo()" ,  git status ,  Repository er geymsla.
+
+
+9.	Hver fann upp GIT?
+Linus Torvalds
+
+10.	Hvar er GIT helst notað?
+stjórnkerfi til að fylgjast með breytingum á tölvu skrám og samræma vinnu á þeim skrám meðal margra manna.
+
