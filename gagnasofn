@@ -1,0 +1,126 @@
+CREATE DATABASE 2704982729_lokaverk_GAGN;
+USE 2704982729_lokaverk_GAGN;
+
+CREATE TABLE flytjandi
+(
+flytjandi_ID int(5) auto_increment primary key,
+nafn varchar(35),
+stofndagur DATE,
+lokadagur DATE,
+lysing VARCHAR(100)
+);
+INSERT INTO	flytjandi
+	(nafn,stofnudagur,lokadagur,lysing)
+VALUES
+	('Lil Pump',2016,'2018','Lil Pump byrjaði að að gefa út lög'
+	
+	
+CREATE TABLE tegund
+(
+tegund_ID int(5)auto_increment primary key,
+nafn varchar(35)
+);
+    
+CREATE TABLE utgefandi
+(
+utgefandi_ID int(5)auto_increment primary key,
+nafn VARCHAR(75),
+netfang varchar(55),
+stadsetning varchar(55)
+);    
+
+CREATE TABLE notandi
+(
+notandi_ID int auto_increment primary key,
+nafn VARCHAR(55),
+faedingardagur date,
+netfang varchar(55),
+heimili VARCHAR(75)
+);
+
+
+CREATE TABLE lagalisti
+(
+lagalisti_ID int auto_increment primary key,
+heiti varchar(35),
+stofndagur DATE,
+notandiID int ,
+foreign key (notandiID) references notandi(notandi_ID)
+);
+
+
+	
+
+CREATE TABLE lag
+(
+lag_ID INT auto_increment primary key,
+heiti VARCHAR(35),
+lengd int,
+texti text,
+utgafudagur DATE,
+flytjandiID int,
+tegundID int, 
+utgefandiID int, 
+foreign key (flytjandiID) references flytjandi(flytjandi_ID),
+foreign key (tegundID) references tegund(tegund_ID),
+foreign key (utgefandiID) references utgefandi(utgefandi_ID)
+);
+
+
+
+
+INSERT INTO lag
+	(heiti,lengd,texti,utgafudagur,flytjandi)
+VALUES
+	('ESSKEETIT', 5,'CB on the beat
+Only wear designer esskeetit
+Ouu Lil Pump
+Yeah yeah ouu brr
+Yeah ouu wow
+Yeah yeah ouu ouu
+Only wear designer esskeetit ouu
+Hoppin out the Wraith esskeetit esskeetit
+Smashin on your bitch esskeetit ouu
+Runnin up a check with no limit chyeah
+Poppin on X poppin on X
+Poppin on X pills yuh X
+Got a new car got a new bitch ouu yeah
+And I got a new deal ouu
+Only wear designer esskeetit esskeetit
+Hoppin out the Wraith esskeetit ouu
+Cant nobody touch my swag
+Cant nobody touch my swag
+Cant nobody touch my swag
+Cant nobody touch my swag
+Baby your times up now you gotta go
+Why you hating on my gangggpretty mami', '2018-12-05'),
+
+  
+
+
+
+
+INSERT INTO utgefandi
+	(utgefandi_ID,nafn,netfang,stadsetning)
+VALUES
+	()
+
+INSERT INTO notandi
+	(notandi_ID,nafn,faedingardagur,netfang,heimili)
+VALUES
+
+    
+
+
+
+CREATE TABLE listalog
+(
+	listalog_ID int(5)auto_increment primary key,
+    rod varchar(35),
+    lagalistiID varchar(35),
+    lagID varchar(35),
+    lagalistiID int,
+    lagID int,
+    foreign key (lagalistiID) references lagalisti(lagalisti_ID),
+    foreign key (lagID) references lag(lag_ID)
+);
